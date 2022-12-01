@@ -1,4 +1,4 @@
-*const number = parseInt(prompt('Enter an integer: '));
+const number = parseInt(prompt('Enter an integer: '));
 
 //creating a multiplication table
 for(let i = 1; i <= 10; i++) {
@@ -8,4 +8,4 @@ for(let i = 1; i <= 10; i++) {
 
     
     console.log(i+ "x" +i+ "=" +i*number);
-}*/
+}

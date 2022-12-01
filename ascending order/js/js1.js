@@ -1,86 +1,134 @@
-var num1=prompt("enter the value of num1");
-num1=parseInt(num1);
-var num2=prompt("enter the value of num2");
-num2=parseInt(num2);
-var num3=prompt("enter the value of num3");
-num3=parseInt(num3);
-var x=prompt("enter the value of x");
-x=parseInt(x);
-var y=prompt("enter the value of y");
-y=parseInt(y);
-var z=prompt("enter the value of z");
-z=parseInt(z);
-
-
-
-
-if(num1<num2 && num1<num3)
-{   
-	if(num2<num3)
-	{
-		console.log(num1,num2,num3);	
-	}
-    else
-	{
-		console.log(num1,num3,num2);	
+a=parseInt(prompt("enter the a value"))
+b=parseInt(prompt("enter the a value"))
+c=parseInt(prompt("enter the a value"))
+d=parseInt(prompt("enter the a value"))
+if(a>b && a>c && a>d)
+{
+ if(b>c && b>d){
+    if(c>d){
+	   console.log(a,b,c,d)
+	   }
+	else{
+	   console.log(a,b,d,c)
+	   }
+  }
+  else if(c>b && c>d)
+  {
+   if(b>d)
+   {
+   console.log(a,c,b,d)
+   }
+   else{
+    console.log(a,c,d,b)
     }
-}
-else if(num2<num1 && num2<num3)
-{
-	if(num1<num3)
-	{
-		console.log(num2,num1,num3);
-	}
-	else
-	{
-		console.log(num2,num3,num1);
-	}
-}	
-else if(num3<num1 && num3<num2)
-{
-	if(num1<num2)
-	{
-		console.log(num3,num1,num2);
-	}
-	else
-	{
-		console.log(num3,num2,num1);
-	}
+  }
+  else if(d>b && d>c)
+     {
+	 if(b>c)
+	 {
+	 console.log(a,d,b,c)
+	 }
+	 else{
+	 console.log(a,d,c,b)
+	 }
+	 
+	 }
 }
 
-
-
-
-if(x>y && x>z)
-{   
-	if(y>z)
+else if(b>a && b>c && b>d)
+ {
+  if(a>c && a>d)
+  {
+    if(c>d){
+	  console.log(b,a,c,d)
+	  }
+	  else{
+	   console.log(b,a,d,c)
+	   }
+}   
+  else if(c>a && c>d)
+  {
+    if(a>d)
 	{
-		console.log(x,y,z);	
-	}
-    else
+	console.log(b,c,a,d)
+	}else{
+	  console.log(b,c,d,a)
+	  }
+	 }
+else if(d>c && d>a) 
 	{
-		console.log(x,z,y);	
-    }
+	   if(c>a)
+	      {
+	    console.log(b,d,c,a)
+	      }
+	   else
+	    {
+	console.log(b,d,a,c)
+         }
+  }
+  
+  
 }
-else if(y>x && y>z)
+ else if(c>a && c>b && c>d)
+ {
+    if(a>b && a>d)
+	{
+	   if(b>d){
+	   console.log(c,a,b,d)
+	   }
+	   else
+	   {
+	   console.log(c,a,d,b)
+	   }
+	}
+	else if(b>a && b>d)
+	{
+	   if(a>d){
+	    console.log(c,b,a,d)
+		}
+		else{
+		 console.log(c,b,d,a)
+		 }
+	}
+	else if (d>a && d>b)
+	{
+	if(a>b)
+	{
+	console.log(c,d,a,b)
+	}
+	else{
+	console.log(c,d,b,a)
+	}
+}
+else if(d>a && d>b && d>c)
 {
-	if(x>z)
+  if(a>b && a>c)
+  {
+    if(b>c)
 	{
-		console.log(y,x,z);
+	console.log(d,a,b,c)
+	}else{
+	console.log(d,a,c,b)
 	}
-	else
+}
+  else if(b>a && b>c)
+  {
+    if(a>c)
 	{
-		console.log(y,z,x);
-	}
-}	
-else if(z>num1 && z>y)
-{
-	if(x>y)
-	{
-		console.log(z,x,y);
-	}
-	else
-	{
-		console.log(z,y,x);
-	}
+	 console.log(d,b,a,c)
+	 }else{
+	 console.log(d,b,c,a)
+	 }
+ }
+	 
+	 else if(c>a && c>b)
+	 {
+	 if(a>b)
+	 {
+	 console.log(d,c,a,b)
+	 }
+	 else{
+	 console.log(d,c,b,a)
+   }
+}
 }
